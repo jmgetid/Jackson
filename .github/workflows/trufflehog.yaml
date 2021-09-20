@@ -1,9 +1,11 @@
+
 name: Github Actions Trufflehog
 on: [push]
 jobs: 
   runs-on: ubuntu-latest
   steps: 
     uses: edplato/trufflehog-actions-scan@master
+
 
 
 
