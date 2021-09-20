@@ -1,11 +1,11 @@
 
-workflow "Detect Secrets" {
-  on = "push"
-  resolves = ["edplato/trufflehog-actions-scan"]
-}
+name: Github Actions Trufflehog
+on: [push]
+jobs: 
+  runs-on: ubuntu-latest
+  steps: 
+    uses: edplato/trufflehog-actions-scan@master
 
-action "edplato/trufflehog-actions-scan" {
-  uses = "edplato/trufflehog-actions-scan@master"
-}
+
 
 
