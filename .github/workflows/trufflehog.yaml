@@ -1,0 +1,11 @@
+
+workflow "Detect Secrets" {
+  on = "push"
+  resolves = ["edplato/trufflehog-actions-scan"]
+}
+
+action "edplato/trufflehog-actions-scan" {
+  uses = "edplato/trufflehog-actions-scan@master"
+}
+
+
